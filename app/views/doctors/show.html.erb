@@ -3,7 +3,13 @@
 
 <% @doctor.appointments.each do |appointment| %>
   <p>
+<<<<<<< HEAD
     <%= appointment.appointment_datetime.strftime("%B %-d, %Y at %H:%M") %>
     <%= link_to appointment.patient.name, appointment.patient %>
   </p>
 <% end %>
+=======
+    <%= appointment.appointment_datetime.strftime("%B %-d, %Y %H:%M") %>
+    <%= appointment.patient.name %>
+  </p>
+>>>>>>> 9e7cf68c9acc5a4ecbf82f805c2e7c2949c4d792
